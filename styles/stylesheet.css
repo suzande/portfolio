@@ -1,10 +1,71 @@
 <style>
     h1 {
         color: blue;
-        font-size: 2em;
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
+        margin-left: 20px;
+        }
+    h2 {
+        color: DarkRed;
+    }
+    h3 {
+        color: IndianRed;
     }
 
-    body {
-        background-color: blue;
+    img {
+        border-style: dashed;
+        border-color: CornflowerBlue;
+        border-width: 6px;
     }
-</style
+    .purple-text {
+        color: purple;
+    }
+    p {
+        color: DarkMagenta;
+        font-weight: bold;
+    }
+    a {
+        color: CornflowerBlue
+    }
+    ol.a {
+        list-style-type: circle;
+        color: black;
+    }
+    ol.b {
+        list-style-type:circle;
+    }
+    ul.c {
+        list-style-type:circle;
+    }
+    ul.d {
+        list-style-type:none;
+    }
+    a[href="index.html"] {
+        color: DarkMagenta;
+    }
+    a[href="about-me.html"] {
+        color: DarkMagenta;
+        }
+    a[href="projectlist.html"] {
+        color: DarkMagenta;
+    }
+    a[href="https://www.w3schools.com/html/html5_semantic_elements.asp"] {
+        color: DarkMagenta;
+    }
+    a[href="https://medium.com/women-of-silicon-valley/suzanne-depoe-8e54079c73ff"] {
+        color: DarkMagenta;
+    }
+    a[href="https://github.com/suzande/semantic-elements"] {
+        color: DarkMagenta;
+    }
+    a[href="https://github.com/suzande/portfolio.git"] {
+        color: DarkMagenta;
+    }
+    a[href="https://www.pce.uw.edu/online/certificate-programs"] {
+        color: DarkMagenta;
+    }
+    body {
+    background-color: pink;
+    }
+</style>
