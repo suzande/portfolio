@@ -4,6 +4,19 @@ body {
     background-color: pink;
 }
 
+a:hover {
+  color: ;
+  font-size: 12rem;
+}
+a {
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+section:hover {
+    background-color: lightblue;
+}
 h1 {
     font-family: 'Roboto', sans-serif;
     color: black;
@@ -19,6 +32,8 @@ h3 {
     font-family: 'Roboto', sans-serif;
     color: black;
     margin-left: 3rem;
+    transition-property: font-size;
+    text-decoration-color: red;
     }
 
 img {
@@ -36,18 +51,17 @@ p {
     color: DarkMagenta;
     font-weight: bold;
     }
-a {
-    color: CornflowerBlue
-    }
-a[href="index.html"] {
+
+a:hover[href="index.html"] {
     color: DarkMagenta;
     font-size: 1rem;
+    background-color: white;
     }
 a[href="about-me.html"] {
     color: DarkMagenta;
     font-size: 1rem;
         }
-a[href="projectlist.html"] {
+a:visited[href="projectlist.html"] {
     color: DarkMagenta;
     font-size: 1rem;
     }
@@ -114,4 +128,9 @@ footer {
     justify-content: left;
     width: 75%;
     float: left;
+  }
+  section ul li:nth-child(odd) {color: white;}
+  section ul li:nth-child(3n+1){
+      background-color: orange;
+      width: 20%;
   }
