@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+      <meta charset="utf-8">
+      <title>Need Help Support</title>
+      <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+</head>
+
+<body>
+    <form method="get" name="Support Request">
+    <label>First Name:<input type="text" name="first-name"> </label>
+    <label>Phone Number:<input type="number" name="phone-number"></label>
+    <label>What area of the website would you like to hear about?</label>
+        <textarea name="area interested in" rows=4 cols="20"></textarea>
+
+    <select name="bb_association">
+        <option value="" selected>PNBOA Seattle</option>
+        <option value="">Snohomish County</option>
+        <option value="">Pierce County</option>
+        <option value="">Olympia</option>
+        <option value="">Vancouver</option>
+    </select>
+
+    <fieldset class="referee">
+        <legend>What level of basketball would you like to officiate?</legend>
+        <label>Children 8th grade and below
+            <input type="radio" name="young" value="young">
+        </label>
+        <label>High School 9th to 12th grade
+            <input type="radio" name="high-school" value="high-school">
+        </label>
+        <label>Recreation Women
+            <input type="radio" name="recreation-women" value="recreation-women">
+        </label>
+        <label>Recreation Men
+            <input type="radio" name="recreation-Men" value="recreation-men">
+        </label>
+    </fieldset>
+
+    <fieldset class="cs-class">
+        <legend>Are you interested in hearing more on Computer Science Presentations?
+        <label>Presentation via Zooom
+            <input type="checkbox" name="cs-zoom" value="cs-zoom">
+        </label>
+        <label>Presentation in person
+            <input type="checkbox" name="cs-inperson" value="cs-inperson">
+        </label>
+    </fieldset>
+
+    <fieldset class="famous-player">
+        <legend>A fun item, who's your favorite basketball player?</legend>
+        <label>Michael Jordan
+            <input type="radio" name="michael jordan" value="michael jordan">
+        </label>
+        <label>Lebron James
+            <input type="radio" name="lebron james" value="lebron james">
+        </label>
+        <label>Larry Bird
+            <input type="radio" name="larry bird" value="larry bird">
+        </label>
+        <label>Kobe Bryant
+            <input type="radio" name="kobe bryant" value="kobe bryant">
+        </label>
+    </fieldset>
+
+    <label>What's your email address?
+        <label>Email Address:<input type="email" name="email"></label>
+
+
+    <label>Password as a test, doesn't do anything
+        <input type="password" name="password">
+    </label>
+    <hr>
+
+    <label>Send us your Name
+        <input type="submit" value="send" name="submit">
+    </label>
+    <form action="mailto:fox40suzanne@gmail.com">
+</form>
+</body>
+</html>
