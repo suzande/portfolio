@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 
-
+/*-- Forms.html CSS Semantics --*/
 button, input, select, textarea {
     font-family: ionherit;
     font-size: 100%;
@@ -12,11 +11,15 @@ button, input, select, textarea {
 input[type=password] {
     color: red;
 }
-
 input:required {
     border: 3px dashed red;
 }
-
+input[type=checkbox] {
+    width: 40px;
+}
+input[type=radio] {
+    width: 40px;
+}
 input[type=submit] {
     padding: 20px;
     color: white;
@@ -42,29 +45,42 @@ input[type=submit] {
     margin: 20px;
     width: 700px;
 }
-h4 {
-    margin: 25px;
-}
-
 .bb-association {
-    display: none
-    position: relative;
-    width: 400px;
-    margin: 60px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    margin: 23px;
+    padding-right: 20px;
+}
+.county {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+}
+.add-padding {
+    padding-left: 10px;
+    margin-left: 20px;
 }
 .referee {
     display: flex;
+    flex-direction: row;
     text-align: left;
     font-size: 18px;
-    justify-content: space-around;
-    width: 500px;
-    margin: 20px;
+    justify-content: space-evenly;
+    width: 150px;
+    margin: 10px;
 }
 .ref-box {
     width: 300px;
     text-align: center;
-
+    margin-left: 0;
+    padding-left: 0;
+}
+.radio {
+    margin: 0;
+    padding: 10px;
+    width: 10px;
 }
 .level {
     display: flex;
@@ -73,29 +89,35 @@ h4 {
 }
 .cs-class {
     display: flex;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
     font-size: 18px;
-    justify-content: space-around;
-    width: 600px;
-    margin: 20px;
-
+    justify-content: space-evenly;
+    width: 800px;
+    margin: 10px;
 }
 .famous-player {
     display: flex;
     text-align: left;
     font-size: 18px;
-    justify-content: space-around;
-    width: 300px;
-    margin: 20px;
+    justify-content:  space-between;
+    width: 150px;
+    margin: 10px;
 }
 .player-name {
     text-align: center;
+    justify-content: left;
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
 }
 .get-information {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     width: 500px;
     margin: 20px;
+    padding-left: 20px;
 }
 .send-information {
     display: flex;
@@ -103,10 +125,10 @@ h4 {
     margin: 20px
 }
 .send-form {
-    margin: 100px
+    margin: 100px;
     padding: 20px;
 }
-
+/*-- Index Navigation Menu CSS Semantics --*/
 .li-margin {
     margin: 0px;
     padding: 0px;
@@ -114,7 +136,6 @@ h4 {
 }
 .nav-wrapper ul{
     list-style-type: none;
-    width: 100%;
     display: flex;
     flex-direction: row;
     background-color: #FF69B4;
@@ -136,18 +157,13 @@ h4 {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
-input[type=submit]:active {
-}
-
-
+/*-- Index body with other CSS Semantics --*/
 .body {
     font-family: Arial;
     font-size: 17px;
     margin: 0;
     background-color: pink;
 }
-
 a:hover {
   color: white;
   font-size: 12rem;
@@ -157,9 +173,6 @@ a {
     transition-duration: 4s;
     transition-timing-function: ease-out;
     transition-delay: 1s;
-}
-section-1:hover {
-    background-color: lightblue;
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -205,8 +218,13 @@ a[href="about-me.html"] {
     color: DarkMagenta;
     font-size: 1rem;
         }
+a[href="projectlist.html"] {
+    color: DarkMagenta;
+    margin: 20px;
+        }
 a[href="https://www.w3schools.com/html/html5_semantic_elements.asp"] {
     color: DarkMagenta;
+    margin: 20px;
     }
 a[href="https://medium.com/women-of-silicon-valley/suzanne-depoe-8e54079c73ff"] {
     color: DarkMagenta;
@@ -223,6 +241,7 @@ a[href="https://github.com/suzande/portfolio.git"] {
 a[href="https://www.pce.uw.edu/online/certificate-programs"] {
     color: DarkMagenta;
     }
+
 li {
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -244,9 +263,10 @@ p {
 .received {
     margin: 20px;
   }
+
+/*-- About-me.html CSS Semantics --*/
 .flex-wrapper {
     background: pink;
-    height:200px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -262,16 +282,22 @@ p {
     display: flex;
     justify-content: left;
   }
+.figure {
+    display: flex;
+    justify-content: center;
+}
 
   section ul li:nth-child(odd) {color: white;}
   section ul li:nth-child(3n+1){
       background-color: orange;
       width: 30%;
   }
+  .semantics-info {
+      margin: 10px;
+  }
 
   .footer {
       display: flex;
       font-size: 2rem;
       justify-content: center;
-      width: 75%;
     }
