@@ -1,82 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <head>
       <meta charset="utf-8">
       <title>Need Help Support</title>
       <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
-</head>
+    </head>
 
-<body>
-    <form method="get" name="Support Request">
-    <label>First Name:<input type="text" name="first-name"> </label>
-    <label>Phone Number:<input type="number" name="phone-number"></label>
-    <label>What area of the website would you like to hear about?</label>
-        <textarea name="area interested in" rows=4 cols="20"></textarea>
+<body class="body">
+      <header>
+        <h1>Support and Information request from Suzanne</h1>
+        <nav class="nav-wrapper">
+          <ul>
+              <li class="li-margin"><a href="index.html">Home</a></li>
+              <li class="li-margin"><a href="about-me.html">About Me</a></li>
+              <li class="li-margin"><a href="projectlist.html">Class Project List</a></li>
+              <li class="li-margin"><a href="forms.html">Need Help</a></li>
+           </ul>
+          </nav>
+       </header>
 
-    <select name="bb_association">
-        <option value="" selected>PNBOA Seattle</option>
-        <option value="">Snohomish County</option>
-        <option value="">Pierce County</option>
-        <option value="">Olympia</option>
-        <option value="">Vancouver</option>
-    </select>
-
-    <fieldset class="referee">
+    <div class="name-address">
+      <form method="get" name="Support Request"></form>
+        <label class="info">First Name:<input class="input-box" type="text" name="first-name"> </label>
+        <label class="info">Last Name:<input class="input-box" type="text" name="last-name"> </label>
+        <label class="info">Phone Number:<input class="input-box"type="number" name="phone-number"></label>
+        <label class="info">What area of the website would you like to hear about?</label>
+          <textarea class="info-text" name="area interested in" rows=4 cols="100"></textarea>
+    </div>
+    <div name="bb-association">
+      <h4>Select the area in which you live:</h4>
+      <select>
+        <option value="0" selected>King County</option>
+        <option value="1">Snohomish County</option>
+        <option value="2">Pierce County</option>
+        <option value="3">Olympia County</option>
+        <option value="4">Vancouver County</option>
+      </select>
+    </div>
+    <div>
+      <fieldset class="referee">
         <legend>What level of basketball would you like to officiate?</legend>
-        <label>Children 8th grade and below
+        <label class="ref-box">Children 8th grade and below
             <input type="radio" name="young" value="young">
         </label>
-        <label>High School 9th to 12th grade
+        <label class="ref-box">High School 9th to 12th grade
             <input type="radio" name="high-school" value="high-school">
         </label>
-        <label>Recreation Women
+        <label class="ref-box">Recreation Women
             <input type="radio" name="recreation-women" value="recreation-women">
         </label>
-        <label>Recreation Men
+        <label class="ref-box">Recreation Men
             <input type="radio" name="recreation-Men" value="recreation-men">
         </label>
-    </fieldset>
-
-    <fieldset class="cs-class">
-        <legend>Are you interested in hearing more on Computer Science Presentations?
+      </fieldset>
+  </div>
+    <div>
+       <fieldset class="cs-class">
+        <legend>Are you interested in hearing more on Computer Science Presentations?</legend>
         <label>Presentation via Zooom
             <input type="checkbox" name="cs-zoom" value="cs-zoom">
         </label>
         <label>Presentation in person
             <input type="checkbox" name="cs-inperson" value="cs-inperson">
         </label>
-    </fieldset>
-
-    <fieldset class="famous-player">
+      </fieldset>
+  </div>
+    <div>
+      <fieldset class="famous-player">
         <legend>A fun item, who's your favorite basketball player?</legend>
-        <label>Michael Jordan
+        <label class="player-name">Michael Jordan
             <input type="radio" name="michael jordan" value="michael jordan">
         </label>
-        <label>Lebron James
+        <label class="player-name">Lebron James
             <input type="radio" name="lebron james" value="lebron james">
         </label>
-        <label>Larry Bird
+        <label class="player-name">Larry Bird
             <input type="radio" name="larry bird" value="larry bird">
         </label>
-        <label>Kobe Bryant
+        <label class="player-name">Kobe Bryant
             <input type="radio" name="kobe bryant" value="kobe bryant">
         </label>
-    </fieldset>
+       </fieldset>
+   </div>
+     <div class="get-information">
+         <label>What's your email address?</label>
+         <label>Email Address:<input type="email" name="email"></label>
 
-    <label>What's your email address?
-        <label>Email Address:<input type="email" name="email"></label>
+         <label>Password as a test, doesn't do anything
+             <input type="password" name="password">
+        </label>
+    </div>
+        <label class="send-form">Send the form:
+          <input type="submit" value="send" name="submit">
+        </label>
 
-
-    <label>Password as a test, doesn't do anything
-        <input type="password" name="password">
-    </label>
-    <hr>
-
-    <label>Send us your Name
-        <input type="submit" value="send" name="submit">
-    </label>
-    <form action="mailto:fox40suzanne@gmail.com">
-</form>
+    <form action="mailto:fox40suzanne@gmail.com"></form>
 </body>
 </html>

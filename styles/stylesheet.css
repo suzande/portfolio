@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
 
+* {
+    border: 1px solid black;
+}
+
 button, input, select, textarea {
     font-family: ionherit;
     font-size: 100%;
-    width: 150px
+    width: 150px;
     margin: 0;
     box-sizing: border-box;
     border-radius: 4px;
@@ -24,43 +28,98 @@ input[type=submit] {
     color: green;
     outline: white;
 }
+.name-address {
+    width: 800px;
+}
+.input-box {
+    width: 200px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.info-text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 700px;
+}
+h4 {
+    margin: 25px;
+}
 
-.body-form {
-    background-color: pink;
-
+.bb-association {
+    display: none
+    position: relative;
+    width: 400px;
+    margin: 60px;
+    padding-left: 20px;
 }
 .referee {
     display: flex;
-    font-size: 12px
+    text-align: left;
+    font-size: 18px;
     justify-content: space-around;
+    width: 500px;
+    margin: 20px;
+}
+.ref-box {
+    width: 300px;
+    text-align: center;
 
+}
+.level {
+    display: flex;
+    text-align: left;
+    width: 300px;
 }
 .cs-class {
     display: flex;
-    font-size: 12px
+    text-align: center;
+    font-size: 18px;
     justify-content: space-around;
+    width: 600px;
+    margin: 20px;
 
 }
 .famous-player {
     display: flex;
-    font-size: 12px
+    text-align: left;
+    font-size: 18px;
     justify-content: space-around;
+    width: 300px;
+    margin: 20px;
+}
+.player-name {
+    text-align: center;
+}
+.get-information {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 20px;
+}
+.send-information {
+    display: flex;
+    width: 300px;
+    margin: 20px
+}
+.send-form {
+    margin: 100px
+    padding: 20px;
 }
 
-
-
-
-
 .li-margin {
-    margin: 10px;
-    padding: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
 }
 .nav-wrapper ul{
     list-style-type: none;
     width: 100%;
     display: flex;
     flex-direction: row;
-    text-align: left;
     background-color: #FF69B4;
     margin: 0;
     border-style: dashed;
@@ -69,15 +128,16 @@ input[type=submit] {
 .nav-wrapper li a {
     display: flex;
     flex-direction: row;
-    text-align: center;
-    text-decoration: none;
+    text-align: left;
+    justify-content: space-around;
     color:  black;
     font-weight:  bold;
-    width: 100px;
+    width: 200px;
     line-height: 30px;
     font-size: 16px;
-    margin-left: 100px;
+    margin-left: 10px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 input[type=submit]:active {
@@ -88,7 +148,6 @@ input[type=submit]:active {
     font-family: Arial;
     font-size: 17px;
     margin: 0;
-    width: 100%;
     background-color: pink;
 }
 
@@ -182,7 +241,7 @@ p {
     font-weight: bold;
     margin: 20pt;
     }
-circle-nav {
+.circle-nav {
     list-style-type: circle;
     }
 .received {
@@ -204,7 +263,7 @@ circle-nav {
     height: 180px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
   }
 
   section ul li:nth-child(odd) {color: white;}
